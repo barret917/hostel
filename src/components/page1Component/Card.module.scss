@@ -1,0 +1,40 @@
+.cartBox{
+    max-width: 100%;
+    background-color: #ffffff33;
+    border-radius: 20px;
+    margin-top: 30px;
+    display: flex;
+    gap: 50px;
+    
+
+    .icon{
+        object-fit: cover;
+        border-radius: 20px;
+        width: 200px;
+        padding: 20px;
+        background-color: #F3D5B1;
+    }
+
+    .cartBoxInner{
+         padding: 0px 50px 0px 0px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-evenly;
+
+        .titleHostel{
+            font-size: 30px;
+            font-weight: 600;
+        }
+        .goodHostel{
+            font-size: 21px;
+            line-height: 31px;
+            color: #000000B2;
+        }
+        .price{
+            display: flex;
+            justify-content: space-between;
+            font-weight: 600;
+        }
+        
+    }
+}
