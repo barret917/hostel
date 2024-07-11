@@ -29,9 +29,9 @@ function Page() {
     const [showAll, setShowAll] = useState([]) // стэйт для данных с сервера
 
     useEffect(() => {
-        ;(async () => {
+        (async () => {
             const meta = await fetch(URL).catch((error) => {
-                console.log('sos', error)
+                (console.log('sos', error))
             }) //данные прилетают с сервера
 
             const meta2 = await meta.json()
@@ -40,13 +40,7 @@ function Page() {
     }, [])
 
     //функция для сетстэйта отображения карточек
-    const handleClick = () => {
-        if (visibleCoint > 2) {
-            setvisibleCoint(2)
-        } else {
-            setvisibleCoint(visibleCoint + 5)
-        }
-    }
+    const handleClick = () => {(visibleCoint > 2) ? setvisibleCoint(2) : setvisibleCoint(visibleCoint + 5)}
 
     return (
         <>
@@ -75,3 +69,5 @@ function Page() {
 }
 
 export default Page
+
+
